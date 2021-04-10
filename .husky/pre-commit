@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+eslint --fix './**/*.js' --config './.eslintrc.json' 
+prettier --config .prettierrc.json --write --check './**/*.js' --no-editorconfig --config-precedence prefer-file 
+git add -A
