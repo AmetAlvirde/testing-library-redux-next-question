@@ -3,7 +3,12 @@
   "env": {
     "browser": true
   },
-  "extends": ["airbnb", "prettier"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:testing-library/recommended",
+    "plugin:jest/recommended"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -11,6 +16,7 @@
       "impliedStrict": true
     }
   },
+  "plugins": ["testing-library", "jest"],
   "rules": {
     "no-console": "warn",
     "react/prefer-stateless-function": [

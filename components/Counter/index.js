@@ -17,13 +17,13 @@ const Counter = () => {
           bg="brand.primary"
           color="brand.textOnPrimary"
           onClick={() => dispatch(incrementCount())}>
-          +1
+          +
         </Button>
         <Button
           bg="brand.primary"
           color="brand.textOnPrimary"
           onClick={() => dispatch(decrementCount())}>
-          -1
+          -
         </Button>
         <Button
           bg="brand.primary"
